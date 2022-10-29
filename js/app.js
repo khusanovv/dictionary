@@ -43,6 +43,12 @@ formEl.addEventListener("submit", (e) => {
     //     }
       audioEl.setAttribute("controls", "")
       audioEl.src = element.phonetics[0].audio;
+      if(element.phonetics[0].audio == ""){
+        audioEl.innerHTML = "Sorry the word is not found audio "
+      }
+      else{
+        audioEl.src = element.phonetics[0].audio;
+      }
     });
   });
     
