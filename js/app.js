@@ -45,6 +45,7 @@ formEl.addEventListener("submit", (e) => {
         }
       audioEl.setAttribute("controls", "")
       audioEl.src = element.phonetics[0].audio;
+      audioEl.muted = false;
       if(element.phonetics[0].audio == ""){
         audioEl.innerHTML = "Sorry the word is not found audio "
       }

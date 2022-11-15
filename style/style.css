@@ -12,7 +12,7 @@
   font-weight: 900 !important;
   margin-top: 0;
 }
-.form-wrapper .search__input {
+.form-wrapper .form__title .search__input {
   margin-top: 20px;
   width: 80%;
   height: 56px;
@@ -25,19 +25,19 @@
   color: rgb(41, 41, 41);
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3501);
 }
-.form-wrapper .search__input:active {
+.form-wrapper .form__title .search__input:active {
   border: none;
 }
-.form-wrapper .search__input::-moz-placeholder {
+.form-wrapper .form__title .search__input::-moz-placeholder {
   margin-left: 10px;
 }
-.form-wrapper .search__input:-ms-input-placeholder {
+.form-wrapper .form__title .search__input:-ms-input-placeholder {
   margin-left: 10px;
 }
-.form-wrapper .search__input::placeholder {
+.form-wrapper .form__title .search__input::placeholder {
   margin-left: 10px;
 }
-.form-wrapper .search__btn {
+.form-wrapper .form__title .search__btn {
   width: 158px;
   height: 56px;
   background: #111111;
@@ -48,14 +48,14 @@
   transition: all 0.5s;
   font-family: cursive;
 }
-.form-wrapper .search__btn.search__btn:hover {
+.form-wrapper .form__title .search__btn.search__btn:hover {
   color: rgb(41, 41, 41);
   background-color: #fff;
   border: 1px rgb(41, 41, 41) solid;
   font-size: 26px;
   letter-spacing: 0.5px;
 }
-.form-wrapper .write__cart {
+.form-wrapper .form__title .write__cart {
   width: 100%;
   min-height: 400px;
   border-radius: 20px;
@@ -64,15 +64,43 @@
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.644);
   padding-left: 25px;
 }
-.form-wrapper .write__cart .cart__title {
+.form-wrapper .form__title .write__cart .cart__title {
   padding-top: 20px;
   font-size: 34px;
 }
-.form-wrapper .write__cart .cart__desc {
+.form-wrapper .form__title .write__cart .cart__desc {
   font-size: 16px;
   color: #5a5a5a;
 }
-
-ul {
+.form-wrapper ul {
   list-style: none;
+  margin: 0;
+  padding: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .form__title {
+    font-size: 48px !important;
+  }
+  .search__input {
+    height: 40px !important;
+    font-size: 14px !important;
+  }
+  .search__btn {
+    width: 120px !important;
+    height: 38px !important;
+    font-size: 16px !important;
+  }
+  .write__cart {
+    padding-left: 0px !important;
+  }
+  .cart__title {
+    text-align: center;
+    font-size: 24px !important;
+  }
+  .cart__desc {
+    font-size: 14px !important;
+    color: #5a5a5a;
+    font-weight: 300;
+  }
 }/*# sourceMappingURL=style.css.map */
