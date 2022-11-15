@@ -10,6 +10,7 @@
   color: rgb(41, 41, 41);
   font-family: cursive;
   font-weight: 900 !important;
+  margin-top: 0;
 }
 .form-wrapper .search__input {
   margin-top: 20px;
@@ -47,7 +48,7 @@
   transition: all 0.5s;
   font-family: cursive;
 }
-.form-wrapper .search__btn:hover {
+.form-wrapper .search__btn.search__btn:hover {
   color: rgb(41, 41, 41);
   background-color: #fff;
   border: 1px rgb(41, 41, 41) solid;
@@ -70,4 +71,4 @@
 .form-wrapper .write__cart .cart__desc {
   font-size: 16px;
   color: #5a5a5a;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
