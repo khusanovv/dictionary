@@ -2,13 +2,14 @@
   max-width: 1280px;
   padding: 30px;
   margin: 0 auto;
-  height: 100vh;
+  font-family: cursive;
 }
 .form-wrapper .form__title {
+  font-size: 74px;
   text-align: center;
-  font-size: 38px;
-  color: #202020;
-  margin-bottom: 10px;
+  color: rgb(41, 41, 41);
+  font-family: cursive;
+  font-weight: 900 !important;
 }
 .form-wrapper .search__input {
   margin-top: 20px;
@@ -18,7 +19,10 @@
   border: none;
   font-size: 24px;
   padding-left: 20px;
-  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.682);
+  font-weight: bold;
+  font-family: cursive;
+  color: rgb(41, 41, 41);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3501);
 }
 .form-wrapper .search__input:active {
   border: none;
@@ -40,6 +44,15 @@
   margin-left: 10px;
   color: #fff;
   font-size: 24px;
+  transition: all 0.5s;
+  font-family: cursive;
+}
+.form-wrapper .search__btn:hover {
+  color: rgb(41, 41, 41);
+  background-color: #fff;
+  border: 1px rgb(41, 41, 41) solid;
+  font-size: 26px;
+  letter-spacing: 0.5px;
 }
 .form-wrapper .write__cart {
   width: 100%;
@@ -57,4 +70,4 @@
 .form-wrapper .write__cart .cart__desc {
   font-size: 16px;
   color: #5a5a5a;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

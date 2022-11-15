@@ -2,12 +2,11 @@
     max-width: 1280px;
     padding: 30px;
     margin: 0 auto;
-    height: 100vh;
     .form__title{
+        font-size: 64px;
         text-align: center;
-        font-size: 38px;
-        color: #202020;
-        margin-bottom: 10px;
+        color: rgb(41, 41, 41);
+        font-weight: 900 !important;
     }
     .search__input{
         margin-top: 20px;
