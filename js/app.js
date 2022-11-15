@@ -17,30 +17,32 @@ formEl.addEventListener("submit", (e) => {
       console.log(element);
       h2El.innerHTML = element.word + " - " + element.phonetics[1].text.split('').slice(1, -1).join('');
    
-      pEl.innerHTML = `${element.meanings[0]
-        .definitions[0].definition 
-        }` + "<br><br>" + `${element.meanings[0].definitions[1].definition
-        }`  + "<br><br>" + `${element.meanings[0].definitions[2].definition}`
-      if(element.meanings[0]
-        .definitions[0].definition == undefined){
-        pEl.textContent = ""
-      }  
+      // pEl.innerHTML = `${element.meanings[0]
+      //   .definitions[0].definition 
+      //   }` + "<br><br>" + `${element.meanings[0].definitions[1].definition
+      //   }`  + "<br><br>" + `${element.meanings[0].definitions[2].definition}`
+      // if(element.meanings[0]
+      //   .definitions[0].definition == undefined){
+      //   pEl.textContent = ""
+      // }  
          
 
    
     // } ) 
-    // let a = element.meanings[0].definitions
-    //     for(let i = 0; i < a.length; i++){
-    //         console.log(a[i].definition);
-    //         let ab = document.createElement("ul")
-    //         let ac = document.createElement("li")
-    //         ac.textContent = a[i].definition
-    //         pEl.appendChild(ab)
-    //         ab.appendChild(ac)
-    //         if(inputEl.value == ""){
-    //             pEl.textContent = ""
-    //         }
-    //     }
+    let a = element.meanings[0].definitions
+    pEl.textContent = ""
+        for(let i = 0; i < 5; i++){
+           
+            console.log(a[i].definition);
+            
+            let ab = document.createElement("ul")
+            let ac = document.createElement("li")
+            ac.textContent = a[i].definition
+            
+            pEl.appendChild(ab)
+            ab.appendChild(ac)
+           
+        }
       audioEl.setAttribute("controls", "")
       audioEl.src = element.phonetics[0].audio;
       if(element.phonetics[0].audio == ""){
