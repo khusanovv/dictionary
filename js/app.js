@@ -5,6 +5,7 @@ let divEl = document.querySelector(".write__cart");
 let h2El = document.querySelector(".cart__title");
 let pEl = document.querySelector(".cart__desc");
 let audioEl = document.querySelector(".audio");
+// let url = 
 
 
 
@@ -14,9 +15,20 @@ formEl.addEventListener("submit", (e) => {
   .then((response) => response.json())
   .then((json) => {
     json.forEach((element) => {
-      console.log(element);
+      console.log(element.word);
+      if(element.word == ""){
+        alert("true")
+      }
+      else{
+        alert("false")
+      }
       h2El.innerHTML = element.word + " - " + element.phonetics[1].text.split('').slice(1, -1).join('');
-   
+      // if (element) {
+      //   console.log("<Error>");
+      // }
+      // else{
+      //   h2El.innerHTML = element.word + " - " + element.phonetics[1].text.split('').slice(1, -1).join('');
+      // }
       // pEl.innerHTML = `${element.meanings[0]
       //   .definitions[0].definition 
       //   }` + "<br><br>" + `${element.meanings[0].definitions[1].definition
