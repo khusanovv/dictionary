@@ -33,7 +33,7 @@ formEl.addEventListener("submit", (e) => {
     pEl.textContent = ""
         for(let i = 0; i < 5; i++){
            
-            console.log(a[i].definition);
+            // console.log(a[i].definition);
             
             let ab = document.createElement("ul")
             let ac = document.createElement("li")
